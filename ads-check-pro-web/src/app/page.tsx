@@ -58,8 +58,9 @@ export default function Home() {
                                         <a
                                             target="_blank"
                                             href="https://chrome.google.com/webstore/detail/ads-check-pro/dgdmdjjejhlhigpblmickdgnfjnckiil"
-                                            className="btn google-play-btn me-3">
-                                            <span className="ti-android" /> Add to Chrome
+                                            className="btn google-play-btn me-3 d-flex"
+                                        >
+                                            <img style={{ width: 20, height: 20, marginRight: 10 }} src="img/new/image-chrome.png" alt="app" className="img-fluid" /> Add to Chrome
                                         </a>
                                     </div>
                                 </div>
@@ -239,8 +240,9 @@ export default function Home() {
                                         <a
                                             target="_blank"
                                             href="https://chrome.google.com/webstore/detail/ads-check-pro/dgdmdjjejhlhigpblmickdgnfjnckiil"
-                                            className="btn google-play-btn me-3">
-                                            <span className="ti-android" /> Add to Chrome
+                                            className="btn google-play-btn me-3 d-inline-flex"
+                                        >
+                                            <img style={{ width: 20, height: 20, marginRight: 10 }} src="img/new/image-chrome.png" alt="app" className="img-fluid" /> Add to Chrome
                                         </a>
                                         <a href="#" className="btn app-store-btn"><span className="ti-apple" /> App Store</a>
                                     </div>
