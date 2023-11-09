@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/inline-script-id */
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Script from 'next/script'
@@ -33,54 +34,29 @@ export default function RootLayout({
                     httpEquiv="X-UA-Compatible"
                     content="IE=edge"
                 />
-                {/* 
-                <meta
-                    name="description"
-                    content="Ads Check Pro cross-platform data connection extension."
+                {/* <!-- Google Tag Manager --> */}
+                <Script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                        })(window,document,'script','dataLayer','GTM-T873LFLS');
+                        `
+                    }}
                 />
-                <meta
-                    name="author"
-                    content="ThemeTags"
-                />
-
-                <meta
-                    property="og:site_name"
-                    content=""
-                />
-                <meta
-                    property="og:site"
-                    content=""
-                />
-                <meta
-                    property="og:title"
-                    content=""
-                />
-                <meta
-                    property="og:description"
-                    content=""
-                />
-                <meta
-                    property="og:image"
-                    content=""
-                />
-                <meta
-                    property="og:url"
-                    content=""
-                />
-                <meta
-                    property="og:type"
-                    content="article"
-                />
-
-                <title>Ads Check Pro</title>
-
-                <link
-                    rel="icon"
-                    href="img/logo/logo.png"
-                    type="image/png"
-                /> */}
+                {/* <!-- End Google Tag Manager --> */}
             </head>
-            <body className={inter.className}>{children}</body>
+            <body className={inter.className}>
+                {/* <!-- Google Tag Manager (noscript) --> */}
+                <noscript>
+                    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T873LFLS"
+                        height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe>
+                </noscript>
+                {/* <!-- End Google Tag Manager (noscript) --> */}
+                {children}
+            </body>
 
             {/* <!--jQuery--> */}
             <Script src="/js/jquery-3.6.1.min.js" />
