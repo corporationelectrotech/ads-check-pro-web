@@ -10,7 +10,7 @@ export default function Home() {
                 {/*start navbar*/}
                 <nav className="navbar navbar-expand-lg fixed-top bg-transparent">
                     <div className="container">
-                        <a className="navbar-brand" href="index.html"><img src="img/logo/logo-white.png" width={120} alt="logo" className="img-fluid" /></a>
+                        <a className="navbar-brand" href="/"><img src="img/logo/logo-white.png" width={120} alt="logo" className="img-fluid" /></a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="ti-menu" />
                         </button>
